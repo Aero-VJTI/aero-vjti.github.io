@@ -1,0 +1,88 @@
+.about {
+  margin: 3rem 2rem;
+  text-align: center;
+  p {
+    text-align: left;
+  }
+  .about-img {
+    width: 80%;
+    text-align: center;
+    margin: 30px auto;
+  }
+  .about-title {
+    text-align: center;
+    font-size: $primary-size;
+    color: $primary-color;
+    padding: 1rem;
+  }
+  .about-text {
+    font-size: 1.1rem;
+    color: $primary-color;
+  } // .overlay-wrapper {
+  //   .about-image {
+  //     background-image: url("../img/team.jpg");
+  //     background-size: cover;
+  //     background-color: transparent;
+  //     height: 400px;
+  //     width: 500px;
+  //     position: relative;
+  //     margin: 2rem auto;
+  //   }
+  // }
+  .media-coverage-wrapper {
+    .title {
+      text-align: center;
+      font-size: $primary-size;
+      color: $primary-color;
+      padding: 1rem;
+    }
+    .articles-wrapper {
+      .wrapper {
+        margin-bottom: 40px;
+        img {
+          margin: 0;
+          width: 100%;
+        }
+        .article-name {
+          font-size: $primary-size;
+          color: $primary-color;
+          padding: 1rem;
+          padding-bottom: 0;
+          margin-bottom: 8px;
+          padding-left: 0;
+        }
+        .article-description {
+          font-size: 1.2rem;
+          color: $primary-color;
+          margin-bottom: 12px;
+        }
+        a {
+          float: left;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width:991px) {
+  .about {
+    .about-text {
+      font-size: 1rem;
+    } // .overlay-wrapper {
+    //   .about-image {
+    //     height: 260px;
+    //     width: 300px;
+    //   }
+    // }
+    .media-coverage-wrapper {
+      .articles-wrapper {
+        .wrapper {
+          margin-bottom: 0px;
+          a {
+            margin-bottom: 20px;
+          }
+        }
+      }
+    }
+  }
+}
