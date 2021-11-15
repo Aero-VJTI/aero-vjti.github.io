@@ -7,7 +7,7 @@
   width: 100%;
   text-align: center;
   font-size: 2rem;
-  color: #fff;
+  color: #333;
 }
 
 .workshops .worshop-list {
@@ -482,19 +482,19 @@
 .about .about-title {
   text-align: center;
   font-size: 2rem;
-  color: #fff;
+  color: #333;
   padding: 1rem;
 }
 
 .about .about-text {
   font-size: 1.1rem;
-  color: #fff;
+  color: #333;
 }
 
 .about .media-coverage-wrapper .title {
   text-align: center;
   font-size: 2rem;
-  color: #fff;
+  color: #333;
   padding: 1rem;
 }
 
@@ -509,7 +509,7 @@
 
 .about .media-coverage-wrapper .articles-wrapper .wrapper .article-name {
   font-size: 2rem;
-  color: #fff;
+  color: #333;
   padding: 1rem;
   padding-bottom: 0;
   margin-bottom: 8px;
@@ -518,7 +518,7 @@
 
 .about .media-coverage-wrapper .articles-wrapper .wrapper .article-description {
   font-size: 1.2rem;
-  color: #fff;
+  color: #333;
   margin-bottom: 12px;
 }
 
