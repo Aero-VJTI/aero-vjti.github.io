@@ -6,7 +6,7 @@ import Image from "next/image";
 const merchandise = [
   {
     name: "T-Shirt",
-    price: "$20",
+    price: "₹350",
     description: "High-quality cotton T-Shirt with club logo.",
     image: "/merch/tshirt_1.jpg",
   }
@@ -14,7 +14,7 @@ const merchandise = [
 
 const MerchandisePage = () => {
   return (
-    <div className="h-screen bg-gray-900 text-white flex flex-col justify-center items-center">
+    <div className="h-screen bg-gray-900 text-white flex flex-col justify-center items-center px-6 ">
        <h2 className="text-4xl md:text-6xl overflow-visible font-extrabold text-center text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-600 mb-6">
           <span className="bg-gradient-to-r from-blue-500 via-orange-400 to-orange-500 bg-clip-text text-transparent font-bold">
             Merchandise
@@ -34,12 +34,12 @@ const MerchandisePage = () => {
                        shadow-lg hover:shadow-blue-500/40 focus:shadow-blue-500/40 active:shadow-blue-500/40
                        transition-all cursor-pointer h-max w-max"
           >
-            <div className="w-100 h-80 relative mb-4">
+            <div className="w-80 h-80 relative mb-4">
               <Image
                 src={item.image}
                 alt={item.name}
                 fill
-                className="rounded-xl h-100 object-contain "
+                className="rounded-xl w-80 h-100 object-contain "
               />
             </div>
             <h2 className="text-2xl font-semibold text-blue-400">{item.name}</h2>

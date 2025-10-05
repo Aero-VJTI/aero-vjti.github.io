@@ -11,39 +11,12 @@ export default function SponsorsPage() {
 
   const tiers = [
     {
-      name: "Silver",
-      amount: "₹10,000",
+      name: "Title Sponsor",
+      amount: "₹2,00,000+",
       description: [
-        "Logo on event banners and website",
-        "Social media appreciation post",
-        "Certificate of sponsorship",
-      ],
-    },
-    {
-      name: "Gold",
-      amount: "₹25,000",
-      description: [
-        "Logo on event T-shirts and banners",
-        "Website and social media promotion",
-        "On-stage mention during events",
-      ],
-    },
-    {
-      name: "Platinum",
-      amount: "₹50,000",
-      description: [
-        "Dedicated promotion post",
-        "Brand logo on event kits and standees",
-        "Event booth access for promotions",
-      ],
-    },
-    {
-      name: "Diamond",
-      amount: "₹75,000",
-      description: [
-        "Exclusive branding on major event assets",
-        "Special mention in closing ceremony",
-        "Collaboration post across AeroVJTI media",
+        "Event named after your brand",
+        "Full-page feature on website and posters",
+        "Lifetime recognition as AeroVJTI’s lead sponsor",
       ],
     },
     {
@@ -56,38 +29,56 @@ export default function SponsorsPage() {
       ],
     },
     {
-      name: "Title Sponsor",
-      amount: "₹2,00,000+",
+      name: "Diamond",
+      amount: "₹75,000",
       description: [
-        "Event named after your brand",
-        "Full-page feature on website and posters",
-        "Lifetime recognition as AeroVJTI’s lead sponsor",
+        "Exclusive branding on major event assets",
+        "Special mention in closing ceremony",
+        "Collaboration post across AeroVJTI media",
       ],
     },
+    
+    {
+      name: "Platinum",
+      amount: "₹50,000",
+      description: [
+        "Dedicated promotion post",
+        "Brand logo on event kits and standees",
+        "Event booth access for promotions",
+      ],
+    },
+    
+    {
+      name: "Gold",
+      amount: "₹25,000",
+      description: [
+        "Logo on event T-shirts and banners",
+        "Website and social media promotion",
+        "On-stage mention during events",
+      ],
+    },
+    {
+      name: "Silver",
+      amount: "₹10,000",
+      description: [
+        "Logo on event banners and website",
+        "Social media appreciation post",
+        "Certificate of sponsorship",
+      ],
+    },
+    
+    
+    
   ];
 
   const sponsors = [
     {
-      name: "TechWings",
-      tier: "Title Sponsor",
-      logo: "/sponsors/image.png",
+      name: "SBI CAPS",
+      tier: "Lab Renovation",
+      logo: "https://res.cloudinary.com/dqqfkjchq/image/upload/v1759694133/download_ob40ot.png",
       description:
-        "Our Title Sponsor, TechWings, leads innovation in UAV systems and supports AeroVJTI’s journey in aviation technology and competitions.",
-    },
-    {
-      name: "AeroZone",
-      tier: "Chief Sponsor",
-      logo: "/sponsors/image.png",
-      description:
-        "AeroZone has been a major supporter, providing advanced aerospace materials and guidance to our fabrication team.",
-    },
-    {
-      name: "MakerSpace India",
-      tier: "Platinum Sponsor",
-      logo: "/sponsors/image.png",
-      description:
-        "MakerSpace India empowers us with access to modern manufacturing tools, helping our students innovate faster and better.",
-    },
+        "Under CSR initiatives, SBI CAPS has renovated the AeroVJTI lab with modern facilities. The upgrade empowers students with enhanced resources for learning, designing, and innovating in aero-modelling."},
+   
   ];
 
   const tierStyles = {
@@ -134,11 +125,13 @@ export default function SponsorsPage() {
             viewport={{ once: true }}
             className="flex justify-center mb-8"
           >
+            <div className="rounded-full border-2 border-blue-400 shadow-lg shadow-blue-500/40 p-4">
             <img
               src="/logo_1.png"
               alt="AeroVJTI Logo"
-              className="w-40 h-40 object-contain rounded-full border-2 border-blue-400 shadow-lg shadow-blue-500/40 p-2"
+              className="w-50 h-50 object-contain "
             />
+            </div>
           </motion.div>
 
           {/* Buttons */}
@@ -169,7 +162,7 @@ export default function SponsorsPage() {
 
   {/* Brochure Download */}
   <a
-    href="/AeroVJTI_Brochure.pdf"
+    href="/AeroVJTI_Brochure_2025.pdf"
     download
     className="cursor-pointer flex items-center gap-3  text-white px-6 py-3 rounded-xl font-semibold shadow-md shadow-green-500/40 transition-all"
   >

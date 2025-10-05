@@ -5,22 +5,16 @@ const teamData = [
   {
     name: "Amey Dheple",
     role: "General Secretary",
-    image: "/teamImages.png",
-  },
+    image: "https://res.cloudinary.com/dqqfkjchq/image/upload/v1759694796/IMG_20251006_013559_rebwtk.jpg"  },
   {
     name: "Dhruva Sambhoo",
     role: "Joint General Secretary",
-    image: "/teamImages.png",
-  },
-  {
-    name: "Shubhangi Jamadade",
-    role: "Treasurer",
-    image: "/teamImages.png",
+    image: "https://res.cloudinary.com/dqqfkjchq/image/upload/v1759694587/IMG-20251006-WA0007_ymw4gf.jpg",
   },
   {
     name: "Parth Gandhi",
-    role: "Sponsership Head",
-    image: "/teamImages.png",
+    role: "Sponsorship Head",
+    image: "https://res.cloudinary.com/dqqfkjchq/image/upload/v1759694209/IMG_20251006_012501_oyvscm.jpg",
   }
 ];
 
@@ -31,7 +25,7 @@ export default function TeamMembers({ props,ref }) {
       id="team"
       className="w-full min-h-screen bg-gradient-to-l max-md:bg-gradient-to-b from-black via-slate-900 to-black animate-gradient px-6 py-20"
     >
-      <div className="max-w-6xl mx-auto text-center">
+      <div className="max-w-6xl max-md:pt-10 mx-auto text-center">
         {/* Heading */}
         <h2 className="text-4xl md:text-6xl overflow-visible font-extrabold text-center text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-600 mb-6">
           <span className="bg-gradient-to-r from-blue-500 via-orange-400 to-orange-500 bg-clip-text text-transparent font-bold">
@@ -44,16 +38,16 @@ export default function TeamMembers({ props,ref }) {
           </p>
 
         {/* Team Grid */}
-        <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+        <div className="mt-6 flex max-md:flex-col justify-center items-center w-full gap-8">
           {teamData.map((member, idx) => (
             <div
               key={idx}
-              className=" rounded-xl shadow-lg overflow-hidden hover:scale-105 transform transition-all duration-300"
+              className="w-80 rounded-xl shadow-lg overflow-hidden hover:scale-105 transform transition-all duration-300"
             >
               <img
                 src={member.image}
                 alt={member.name}
-                className="w-full h-64 object-cover"
+                className="w-full h-70 object-cover"
               />
               <div className="p-4">
                 <h3 className="text-xl font-bold text-cyan-400">{member.name}</h3>

@@ -71,10 +71,10 @@ export default function Footer ({props,ref}) {
               </a>
             </p>
 
-            <p className="flex flex-col justify-start items-start gap-2 w-max hover:text-orange-500 cursor-pointer">
-              <span className="flex justify-center items-center gap-2"><FaPhone /> Amey Dheple - +919423392559
+            <p className="flex flex-col justify-start items-start gap-2 w-max ">
+              <span className="flex justify-center items-center gap-2 hover:text-orange-500 cursor-pointer"><FaPhone /> Amey Dheple: +919423392559
               </span>
-                <span className="flex justify-center items-center gap-2"> <FaPhone /> Dhruva Sambhoo - +919326638229</span>
+                <span className="flex justify-center items-center gap-2 hover:text-orange-500 cursor-pointer"> <FaPhone /> Dhruva Sambhoo: +919326638229</span>
                 
             </p>
           </div>
@@ -84,7 +84,7 @@ export default function Footer ({props,ref}) {
             <h3 className="font-semibold text-lg text-blue-400">Follow Us</h3>
             <div className="flex items-center gap-4 text-xl">
               <a
-                href="#"
+                href="https://www.instagram.com/aerovjti/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:text-orange-500"
@@ -92,7 +92,7 @@ export default function Footer ({props,ref}) {
                 <FaInstagram />
               </a>
               <a
-                href="#"
+                href=""
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:text-orange-500"
@@ -100,7 +100,7 @@ export default function Footer ({props,ref}) {
                 <FaFacebook />
               </a>
               <a
-                href="#"
+                href="https://www.linkedin.com/company/aero-vjtii/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:text-orange-500"
@@ -115,14 +115,14 @@ export default function Footer ({props,ref}) {
               >
                 <FaYoutube />
               </a>
-              <a
+              {/* <a
                 href="#"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:text-orange-500"
               >
                 <FaTwitter />
-              </a>
+              </a> */}
             </div>
           </div>
 

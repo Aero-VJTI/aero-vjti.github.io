@@ -7,12 +7,12 @@ const AboutUs = forwardRef((props, ref) => {
     <section
       ref={ref}
       id="about"
-      className="w-full min-h-screen bg-gradient-to-b max-md:bg-gradient-to-b from-black via-slate-900 to-black-950 animate-gradient flex items-center justify-center px-6 py-20"
+      className="w-full min-h-screen bg-gradient-to-b max-md:bg-gradient-to-b from-black via-slate-900 to-black-950 animate-gradient flex items-center justify-center px-6 py-20 "
     >
       <div className="max-w-6xl text-white space-y-10">
         
         {/* Main Heading */}
-        <div className="text-center mb-12">
+        <div className="text-center max-md:mt-10 md:mb-12">
           <h2 className="text-4xl md:text-6xl font-extrabold tracking-wide bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 to-blue-600">
             About <span className="text-orange-500">Aero VJTI</span>
           </h2>

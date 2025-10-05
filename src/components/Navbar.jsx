@@ -34,7 +34,7 @@ export default function Navbar({ scrollToSection }) {
   return (
     <nav
       className={`fixed w-full z-50 transition-colors duration-300 ${
-        scrolled ? "backdrop-blur-sm" : "bg-transparent"
+        scrolled ? "backdrop-blur-sm max-md:bg-black" : "bg-transparent max-md:bg-black"
       }`}
     >
       <div className="max-w-7xl mx-auto px-6 py-1 flex justify-between items-center">
@@ -84,7 +84,7 @@ export default function Navbar({ scrollToSection }) {
             animate={{ height: "auto", opacity: 1 }}
             exit={{ height: 0, opacity: 0 }}
             transition={{ duration: 0.3 }}
-            className="md:hidden overflow-hidden backdrop-blur-sm"
+            className="md:hidden overflow-hidden bg-black"
           >
             {navLinks.map((link) => (
               <li key={link.name}>

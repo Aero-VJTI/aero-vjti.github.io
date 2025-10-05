@@ -1,98 +1,84 @@
 'use client';
-import React from 'react';
-import Typewriter from './TypeWriter';
+import * as React from "react";
+import { Card, CardContent } from "@/components/ui/card";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
+
 const eventsData = [
   {
-    title: 'RC Aircraft Workshop',
-    description: 'Hands-on workshop on building and flying RC aircraft, learning aerodynamics and design principles.Hands-on workshop on building and flying RC aircraft, learning aerodynamics and design principles.',
-    image: '/workshop1.png',
+    title: 'Glider Workshop 2020',
+    description: 'This Workshop Introduced students to the fundamentals of flight and aircraft design through interactive lectures and hands-on glider construction. Participants built and flew their own gliders, experiencing the thrill of flight and the joy of creation as their models soared successfully across the skies. ✈',
+    image: 'https://res.cloudinary.com/dqqfkjchq/image/upload/v1759689246/83990264_3496629067046123_6432054825336176640_n_l2grta.jpg',
   },
   {
-    title: 'Drone Design Challenge',
-    description: 'Participate in designing and racing drones with aerodynamic and electronic optimization.',
-    image: '/workshop1.png',
+    title: 'Aero Exhibition',
+    description: 'AERO VJTI showcased their expertise in aeronautics and aerodynamics through engaging displays and explanations. The event drew massive crowds, especially curious children, and even featured a visit from ex–Air Chief Marshal B.S. Dhanoa ✈',
+    image: 'https://res.cloudinary.com/dqqfkjchq/image/upload/v1759689242/81882299_3405685212807176_7095352390366265344_n_wttugv.jpg',
   },
   {
-    title: 'PRATIGYA Outreach',
-    description: 'Conduct awareness programs in NGOs to teach aero-modelling and inspire young minds.',
-    image: '/workshop1.png',
+    title: 'AQUILA 2019',
+    description: 'This workshop saw thrilling flight sessions by AERO VJTI, where over 25 teams showcased their flying skills. The skies came alive with powerful gliders and fierce competition—a truly spectacular sight! ✈',
+    image: 'https://res.cloudinary.com/dqqfkjchq/image/upload/v1759693566/The_skies_were_subdued_with_the_mighty_prowess_of_the_throttled_fliers_as_Aero_VJTI_conducted_th_icpoh1.jpg',
   },
-  {
-    title: 'International Competitions',
-    description: 'Participate in global events like AIAA Design/Build/Fly and SAE Aero Design.',
-    image: '/workshop1.png',
-  },
+   {
+    title: 'The Glider Workshop',
+    description: 'This Workshop introduced school students to the exciting world of aviation. Through engaging sessions, they learned the basics of aerodynamics and built their own gliders. The young participants experienced the joy of flight as their creations soared high across the skies. ✈',
+    image: 'https://res.cloudinary.com/dqqfkjchq/image/upload/v1759695741/IMG_20251006_015158_tetvvl.jpg',
+   },
+
 ];
 
-export default function WorkshopsEvents({props,ref}) {
+export  default function WorkshopsEvents({props, ref}) {
   return (
-    <section
-      ref={ref}
-      id="workshop"
-      className="w-full min-h-screen px-6 py-24 bg-gradient-to-l max-md:bg-gradient-to-b from-black via-slate-900 to-black animate-gradient"
-    >
-      <div className="max-w-6xl mx-auto">
-        {/* Heading */}
+    <div ref={ref} className="relative w-full h-screen flex flex-col justify-center items-center max-w-6xl mx-auto py-12 bg-gradient-to-l max-md:bg-gradient-to-b from-black via-slate-900 to-black animate-gradient">
+      <div className='max-md:mt-10'>
         <h2 className="text-4xl md:text-6xl overflow-visible font-extrabold text-center text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-600 mb-6">
           <span className="bg-gradient-to-r from-blue-500 via-orange-400 to-orange-500 bg-clip-text text-transparent font-bold">
    Workshops & Events
 </span>
-<span className='text-orange-500'> </span>
-        </h2>
-        <div className='flex justify-center items-center '>
-          <p className=" text-2xl underline-offset-1 font-bold text-white font-mono">
+</h2>
+<p className=" text-center text-2xl underline-offset-1 font-bold text-white font-mono">
             Educating young minds
-          </p>
-          <div className="flex items-center justify-center  ">
-            {/* <Typewriter
-              texts={[
-                '"young minds."',
-                '"the next generation."',
-                'Shaping tomorrow . . .',
-                'Inspiring innovation.',
-              ]}
-              typingSpeed={100}
-              pause={800}
-            /> */}
-          </div>
-        </div>
-        {/* Horizontal Scroll (Scrollbar Hidden) */}
-        <div className="flex space-x-6 overflow-x-auto py-4 mt-5 scrollbar-none">
-          {eventsData.map ((event, idx) => (
-            <div
-              key={idx}
-              className="h-[500px] w-[300px] bg-slate-900/50 rounded-xl shadow-lg flex-shrink-0 "
-            >
-              <img
-                src={event.image}
-                alt={event.title}
-                className="w-full h-48 object-cover rounded-t-xl"
-              />
-              <div className="p-4">
-                <h3 className="text-xl font-bold text-cyan-400 mb-2">
-                  {event.title}
-                </h3>
-                <div>
+  </p>
+
+      </div>
+      <Carousel
+        opts={{ align: "start" }}
+        className="relative w-full max-md:w-[80%] mt-5"
+      >
+        <CarouselContent className="flex  gap-6 ">
+          {eventsData.map((event, idx) => (
+            <CarouselItem key={idx} className="md:basis-1/2 lg:basis-1/3 min-w-[300px] ">
+              <Card className="bg-slate-900/50 shadow-lg rounded-xl overflow-hidden h-[450px]">
+                <img
+                  src={event.image}
+                  alt={event.title}
+                  className="w-full h-60 object-cover"
+                />
+                <CardContent className="p-4">
+                  <h3 className="text-xl font-bold text-cyan-400 mb-2">{event.title}</h3>
                   <p className="text-gray-400 text-sm md:text-base leading-relaxed">
                     {event.description}
                   </p>
-                </div>
-              </div>
-            </div>
+                </CardContent>
+              </Card>
+            </CarouselItem>
           ))}
-        </div>
-      </div>
+        </CarouselContent>
 
-      <style jsx>{`
-        /* Hide scrollbar for all browsers */
-        .scrollbar-none::-webkit-scrollbar {
-          display: none;
-        }
-        .scrollbar-none {
-          -ms-overflow-style: none; /* IE and Edge */
-          scrollbar-width: none; /* Firefox */
-        }
-      `}</style>
-    </section>
+        {/* Arrows outside */}
+        <CarouselPrevious className="absolute -left-8 top-1/2 -translate-y-1/2 z-20 p-3 rounded-full bg-white/30 hover:bg-white/60 text-gray-900 shadow-lg">
+          ◀
+        </CarouselPrevious>
+        <CarouselNext className="absolute -right-8 top-1/2 -translate-y-1/2 z-20 p-3 rounded-full bg-white/30 hover:bg-white/60 text-gray-900 shadow-lg">
+          ▶
+        </CarouselNext>
+      </Carousel>
+    </div>
   );
 }
