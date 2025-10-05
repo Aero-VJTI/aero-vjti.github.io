@@ -108,7 +108,7 @@ export default function Footer ({props,ref}) {
                 <FaLinkedin />
               </a>
               <a
-                href="#"
+                href="https://youtube.com/@aerovjti7606?si=JJXlhfL7o8IrMFrs"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:text-orange-500"
@@ -129,7 +129,7 @@ export default function Footer ({props,ref}) {
         </div>
       </div>
 
-      <div className="text-center text-gray-400 mt-10 text-sm mb-4">
+      <div className="text-center text-gray-400 mt-10 text-sm pb-10">
         &copy; {new Date ().getFullYear ()} Aero VJTI. All rights reserved.
       </div>
     </footer>

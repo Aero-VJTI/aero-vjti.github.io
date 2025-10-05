@@ -21,7 +21,7 @@ export default function SponsorsPage() {
     },
     {
       name: "Chief Sponsor",
-      amount: "₹1,00,000",
+      amount: "₹1,00,000+",
       description: [
         "Prime logo placement on all materials",
         "Full promotional partnership",
@@ -30,7 +30,7 @@ export default function SponsorsPage() {
     },
     {
       name: "Diamond",
-      amount: "₹75,000",
+      amount: "₹75,000+",
       description: [
         "Exclusive branding on major event assets",
         "Special mention in closing ceremony",
@@ -40,7 +40,7 @@ export default function SponsorsPage() {
     
     {
       name: "Platinum",
-      amount: "₹50,000",
+      amount: "₹50,000+",
       description: [
         "Dedicated promotion post",
         "Brand logo on event kits and standees",
@@ -50,7 +50,7 @@ export default function SponsorsPage() {
     
     {
       name: "Gold",
-      amount: "₹25,000",
+      amount: "₹25,000+",
       description: [
         "Logo on event T-shirts and banners",
         "Website and social media promotion",
@@ -59,7 +59,7 @@ export default function SponsorsPage() {
     },
     {
       name: "Silver",
-      amount: "₹10,000",
+      amount: "₹15,000+",
       description: [
         "Logo on event banners and website",
         "Social media appreciation post",
@@ -111,10 +111,10 @@ export default function SponsorsPage() {
             About <span className="text-orange-500">Aero VJTI</span>
           </h2>
 
-          <p className="text-lg text-gray-300 leading-relaxed mb-10">
+          <p className="text-lg text-gray-300 leading-relaxed mb-10 max-md:px-2">
             <span className="font-semibold text-blue-300">AeroVJTI</span> is the official aeromodelling and aircraft design club of{" "}
             <span className="font-semibold text-blue-300">Veermata Jijabai Technological Institute (VJTI)</span>.
-            The club is dedicated to advancing knowledge and skills in aviation, UAVs, and aerospace engineering. Through hands-on learning, competitions, and research, we aim to inspire the next generation of aerospace innovators and engineers.
+            The club is dedicated to advancing knowledge and skills in aviation, UAVs, and aerospace engineering. Through hands-on learning, competitions, and research.
           </p>
 
           {/* Logo */}

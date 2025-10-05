@@ -23,7 +23,7 @@ export default function TeamMembers({ props,ref }) {
     <section
       ref={ref}
       id="team"
-      className="w-full min-h-screen bg-gradient-to-l max-md:bg-gradient-to-b from-black via-slate-900 to-black animate-gradient px-6 py-20"
+      className="w-full min-h-screen bg-gradient-to-l max-md:bg-gradient-to-b from-black via-slate-900 to-black animate-gradient px-6 py-24"
     >
       <div className="max-w-6xl max-md:pt-10 mx-auto text-center">
         {/* Heading */}

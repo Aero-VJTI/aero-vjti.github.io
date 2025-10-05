@@ -11,7 +11,7 @@ const timelineData = [
   {
     year: '2024',
     title: 'Workshops & Training',
-    description: 'Conducted hands-on workshops on aircraft design, aerodynamics, and UAVs for students.',
+    description: 'Ranked 7th in the world in the design report phase',
     image: 'https://res.cloudinary.com/dqqfkjchq/image/upload/v1759685484/2024_aiaa_team_hwbm8r.png',
   },
   {

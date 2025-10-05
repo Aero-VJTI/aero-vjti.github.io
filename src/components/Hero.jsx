@@ -23,7 +23,7 @@ export default function HeroSection({props, ref}) {
           <h1 className="max-md:hidden text-5xl md:text-7xl font-bold text-white drop-shadow-lg">
             Welcome to <span className="text-orange-400">AeroVJTI</span>
           </h1>
-          <p className="md:mt-6 text-lg md:text-xl  max-w-xl md:text-gray-300 rounded-lg backdrop-blur-sm">
+          <p className="md:mt-6 text-lg md:text-xl  max-w-xl md:text-gray-300 rounded-lg backdrop-blur-sm text-white">
             Dream. Design. Fly — shaping the future of aerospace innovation.
 AeroVJTI empowers students to turn their passion for flight into real-world engineering excellence.</p>
           
