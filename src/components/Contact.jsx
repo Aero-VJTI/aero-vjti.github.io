@@ -47,12 +47,12 @@ export default function Footer ({props,ref}) {
         </div>
 
         {/* Right: Info */}
-        <div className="flex-1 flex flex-col justify-between space-y-8">
+        <div className="flex-1 flex flex-col space-y-8">
 
           <div className="flex ">
             {/* Department Info */}
             <div className="space-y-2">
-              <h3 className="font-semibold text-lg text-blue-400">
+              <h3 className="font-semibold text-2xl text-blue-400">
                 Department Of Mechanical Engineering
               </h3>
               <p>Veermata Jijabai Technological Institute (VJTI)</p>
@@ -63,7 +63,7 @@ export default function Footer ({props,ref}) {
 
           {/* Contact Info */}
           <div className="space-y-2">
-            <h3 className="font-semibold text-lg text-blue-400">Contact Details</h3>
+            <h3 className="font-semibold text-2xl text-blue-400">Contact Details</h3>
             <p className="flex items-center gap-2 w-max hover:text-orange-500 cursor-pointer">
               <FaEnvelope />
               <a href="mailto:aero_vjti@vjti.ac.in" >
@@ -79,10 +79,17 @@ export default function Footer ({props,ref}) {
             </p>
           </div>
 
+          
+
+          
+
+        </div>
+
+        <div className='flex flex-col gap-5'> 
           {/* Social Media */}
           <div className="space-y-2">
-            <h3 className="font-semibold text-lg text-blue-400">Follow Us</h3>
-            <div className="flex items-center gap-4 text-xl">
+            <h3 className="font-semibold text-2xl text-blue-400">Follow Us</h3>
+            <div className="flex items-center gap-4 text-2xl">
               <a
                 href="https://www.instagram.com/aerovjti/"
                 target="_blank"
@@ -125,7 +132,23 @@ export default function Footer ({props,ref}) {
               </a> */}
             </div>
           </div>
-
+          <div className="space-y-2 gap">
+            <h3 className="font-semibold text-2xl text-blue-400">Maintained By</h3>
+          
+            <p className="flex justify-start items-start gap-2 w-max "> 
+              <span className="flex justify-center items-center gap-2 hover:text-orange-500 cursor-pointer text-lg">Shivraj Kolwankar 
+              </span>
+              <a
+                href="https://www.linkedin.com/in/shivraj-kolwankar"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-orange-500 text-2xl" 
+              >
+                <FaLinkedin />
+              </a>
+                
+            </p>
+          </div>
         </div>
       </div>
 
