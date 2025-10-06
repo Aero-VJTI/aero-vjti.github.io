@@ -39,7 +39,7 @@ export default function WorkshopsEvents({props, ref}) {
       className="relative w-[100%] py-24 flex flex-col justify-center items-center   bg-gradient-to-l max-md:bg-gradient-to-b from-black via-slate-900 to-black animate-gradient"
     >
       <div className="max-md:mt-10 ">
-        <h2 className="text-4xl md:text-6xl overflow-visible font-extrabold text-center text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-600 mb-6">
+        <h2 className="max-sm:px-2 text-4xl md:text-6xl overflow-visible font-extrabold text-center text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-600 mb-6">
           <span className="bg-gradient-to-r from-blue-500 via-orange-400 to-orange-500 bg-clip-text text-transparent font-bold">
             Workshops & Events
           </span>

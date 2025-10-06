@@ -15,7 +15,11 @@ const teamData = [
     name: "Parth Gandhi",
     role: "Sponsorship Head",
     image: "https://res.cloudinary.com/dqqfkjchq/image/upload/v1759694209/IMG_20251006_012501_oyvscm.jpg",
-  }
+  },
+  {
+    name: "Shubhangi Jamadade",
+    role: "Treasurer",
+    image: "https://res.cloudinary.com/dqqfkjchq/image/upload/v1759752329/WhatsApp_Image_2025-10-06_at_17.24.58_d58f71da_ih8wvq.jpg"}
 ];
 
 export default function TeamMembers({ props,ref }) {

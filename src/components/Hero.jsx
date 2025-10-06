@@ -13,17 +13,17 @@ export default function HeroSection({props, ref}) {
       className="max-md:pb-5 max-md:relative  top-0 left-0 w-full h-screen  overflow-hidden bg-gradient-to-r max-md:bg-gradient-to-b from-black via-slate-900 to-black-950 animate-gradient"
     >
       {/* <Navbar/> */}
-      <div className="relative w-[100%] max-md:mt-6 z-10 flex  max-md:flex-col-reverse h-full justify-center items-center max-md:h-screen">
+      <div className="relative w-[100%] max-sm:pt-20 max-sm:pb-5 max-sm:h-full  max-md:mt-6 z-10 flex  max-md:flex-col-reverse h-full justify-center items-center max-md:h-screen">
 
         {/* LEFT SIDE - TEXT */}
         <div className=" flex flex-col max-md:flex-col-reverse items-center  justify-center text-center px-6 ">
           {/* <p className="text-base md:text-lg text-gray-400 max-w-xl mb-4">
             Exploring the endless skies with passion, technology, and innovation.
           </p> */}
-          <h1 className="max-md:hidden text-5xl md:text-7xl font-bold text-white drop-shadow-lg">
+          <h1 className="max-md:hidden  text-5xl md:text-7xl font-bold text-white drop-shadow-lg">
             Welcome to <span className="text-orange-400">AeroVJTI</span>
           </h1>
-          <p className="md:mt-6 text-lg md:text-xl  max-w-xl md:text-gray-300 rounded-lg backdrop-blur-sm text-white">
+          <p className="md:mt-6 max-[380px]:text-sm text-lg md:text-xl  max-w-xl md:text-gray-300 rounded-lg backdrop-blur-sm text-white">
             Dream. Design. Fly — shaping the future of aerospace innovation.
 AeroVJTI empowers students to turn their passion for flight into real-world engineering excellence.</p>
           
@@ -130,7 +130,7 @@ AeroVJTI empowers students to turn their passion for flight into real-world engi
           </div>
 
         </div>
-         <h1 className="md:hidden px-5 text-center pb-5 text-5xl md:text-7xl font-bold text-white drop-shadow-lg">
+         <h1 className="md:hidden px-5 text-center pb-5 text-5xl max-[380px]:text-3xl md:text-7xl font-bold text-white drop-shadow-lg">
             Welcome to <span className="text-orange-400">AeroVJTI</span>
           </h1>
 
