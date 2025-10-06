@@ -13,7 +13,7 @@ export default function HeroSection({props, ref}) {
       className="max-md:pb-4 max-md:relative  top-0 left-0 w-full h-screen  overflow-hidden bg-gradient-to-r max-md:bg-gradient-to-b from-black via-slate-900 to-black-950 animate-gradient"
     >
       {/* <Navbar/> */}
-      <div className="relative w-[100%] max-md:mt-16 z-10 flex  max-md:flex-col-reverse h-full justify-center items-center max-md:h-screen">
+      <div className="relative w-[100%] max-md:mt-10 z-10 flex  max-md:flex-col-reverse h-full justify-center items-center max-md:h-screen">
 
         {/* LEFT SIDE - TEXT */}
         <div className=" flex flex-col max-md:flex-col-reverse items-center  justify-center text-center px-6 ">
