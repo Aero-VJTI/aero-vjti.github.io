@@ -43,12 +43,8 @@ const MerchandisePage = () => {
             <p className="text-gray-300 mt-2 mb-2">{item.description}</p>
             <div className="flex justify-between items-center w-[100%]">
               <p className="text-lg font-bold">{item.price}</p>
+          
               <button
-                onClick={() =>
-                  window.open (
-                    'https://res.cloudinary.com/dqqfkjchq/image/upload/v1759691148/photo_cevrli.png',
-                    '_blank'
-                  )}
                 className="p-2 rounded-md px-4 cursor-pointer text-white bg-orange-400 hover:bg-orange-600"
               >
                 Buy
