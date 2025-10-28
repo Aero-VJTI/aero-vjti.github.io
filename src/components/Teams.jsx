@@ -19,7 +19,13 @@ const teamData = [
   {
     name: "Shubhangi Jamadade",
     role: "Treasurer",
-    image: "https://res.cloudinary.com/dqqfkjchq/image/upload/v1759752329/WhatsApp_Image_2025-10-06_at_17.24.58_d58f71da_ih8wvq.jpg"}
+    image: "https://res.cloudinary.com/dqqfkjchq/image/upload/v1761633218/WhatsApp_Image_2025-10-06_at_17.24.58_d58f71da_ih8wvq_bqly2s.jpg"
+  },
+  {
+    name: "Shivraj Kolwankar",
+    role: "Tech Head",
+    image: "https://res.cloudinary.com/dqqfkjchq/image/upload/v1761632813/Shivraj_Kolwankar_ripvxg.jpg"
+  },
 ];
 
 export default function TeamMembers({ props,ref }) {
@@ -42,16 +48,16 @@ export default function TeamMembers({ props,ref }) {
           </p>
 
         {/* Team Grid */}
-        <div className="mt-6 flex max-md:flex-col justify-center items-center w-full gap-8">
+        <div className="mt-6 md:grid lg:grid-cols-3 md:grid-cols-2 lg:gap-15 max-md:flex max-md:flex-col justify-center items-center w-full justify-items-center gap-8">
           {teamData.map((member, idx) => (
             <div
               key={idx}
-              className="w-80 rounded-xl shadow-lg overflow-hidden hover:scale-105 transform transition-all duration-300"
+              className="w-80 rounded-xl shadow-lg border-b border-blue-500  overflow-hidden hover:scale-105 transform transition-all duration-300"
             >
               <img
                 src={member.image}
                 alt={member.name}
-                className="w-full h-70 object-cover"
+                className="w-full h-80 object-cover"
               />
               <div className="p-4">
                 <h3 className="text-xl font-bold text-cyan-400">{member.name}</h3>
