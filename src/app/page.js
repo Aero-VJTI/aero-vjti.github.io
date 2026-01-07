@@ -18,6 +18,7 @@ import Timeline from "@/components/TimeLine";
 import AircraftGallery from "@/components/Aircrafts";
 import TeamMembers from "@/components/Teams";
 import Contact from "@/components/Contact";
+import SingleTeam from "@/components/SingleTeam";
 export default function Home() {
   const heroRef = useRef(null);
   const aboutRef = useRef(null);
@@ -40,7 +41,7 @@ export default function Home() {
       <WorkshopsEvents ref={WorkshopsEventsRef} />
       {/* <AircraftGallery ref={AircraftGalleryRef} /> */}
       <Timeline ref={TimelineRef} />
-      <TeamMembers ref={TeamMembersRef} />
+      <SingleTeam ref={TeamMembersRef} />
       <Contact ref={ContactRef} />
       {/* <Contact ref={contactRef} /> */}
     </div>

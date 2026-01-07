@@ -66,6 +66,7 @@ export default function TeamMembers({ props,ref }) {
             </div>
           ))}
         </div>
+        
       </div>
     </section>
   );
